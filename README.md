@@ -39,8 +39,8 @@ We aim to predict the continuous value of the target variable using two distinct
     - XGBoost: For enhanced precision and performance, we employ the XGBoost algorithm, known for its advanced capabilities in handling complex data structures. Detailed in `xgboost_regression.py`.
 
 - Classification
-We apply logistic regression to classify the potential value of EPA awards into specific categories. Detailed in `LogisticRegressionModel.py`.
-
+    - Logistic Regression: We apply logistic regression to classify the potential value of EPA awards into specific categories. Detailed in `LogisticRegressionModel.py`.
+    - Other models: Naive Bayes, SVC. Detailed in `Testing_Notebook.ipynb`.
 Each model's performance is evaluated to determine the best approach for forecasting the value of EPA awards, considering the specific needs of small, women-owned, and minority-owned businesses.
 
 ## Contributing
