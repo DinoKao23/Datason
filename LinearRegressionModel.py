@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 
-machine_df = pd.read_csv('test.csv')
+machine_df = pd.read_csv('machine_df.csv')
 
 X = machine_df.drop('potential_total_value_of_award', axis = 1)
 # Log transformation with python
@@ -33,4 +33,4 @@ mse = mean_squared_error(y_test, y_pred)
 
 print(f"The actual values are: {np.exp(y_test[0])- 1}.The predict values are: {np.exp(y_pred[0])-1}")
 print(f"The mean square error is: {mse}")
-print(f"The rsqaure error is: {r2_score(y_test, y_pred)}")
+print(f"The rsquare error is: {r2_score(y_test, y_pred)}")
