@@ -5,10 +5,10 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.model_selection import train_test_split
 
-machine_df = pd.read_csv('test.csv')
+machine_df = pd.read_csv('machine_df.csv')
 
-range = [-100, 100000, 300000, np.inf]
-group_name = ['0-100k', '100k-300k', '300k+']
+range = [-1, 120000, 310000, np.inf]
+group_name = ['0-120k', '120k-310k', '310k+']
 
 machine_df['income_level'] = pd.cut(machine_df['potential_total_value_of_award'], bins = range, labels = group_name)
 
@@ -36,4 +36,4 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", round(accuracy,3))
 
 # Additional evaluation metrics
-print(classification_report(y_test, y_pred))
+# print(classification_report(y_test, y_pred))
