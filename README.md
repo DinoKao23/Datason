@@ -1,6 +1,5 @@
 # 2024 LMU Datathon
-
-Welcome to the LMU Datathon 2024 project focused on predicting potential contract awards for small businesses, women-owned businesses, or minority businesses with the Environmental Protection Agency (EPA). Our goal is to provide stakeholders with machine learning algorithms that can accurately predict the potential total value of awards they might receive through contracts with the EPA.
+This project aims to use predictive analytics to forecast the potential total value of awards granted by the Environmental Protection Agency (EPA). The focus is on aiding small, women-owned, and minority-owned businesses in securing EPA contract awards. Utilizing data from [USA Spending's Award Data Archive](https://www.usaspending.gov/download_center/award_data_archive), we've developed a pipeline consisting of data cleaning, preprocessing, and predictive modeling to achieve this objective.
 
 ## Table of Contents
 
@@ -24,9 +23,21 @@ pip install pandas>=1.5.3 numpy>=1.24.4 scikit-learn>=1.3.1
 
 ## Usage
 There be seperate into two part: Data Cleaning and Machine Learning
-### Data Cleaning
+### Data Cleaning and Preprocessing
+`clean_data.py`
+
+We cleaned and preprocessed EPA contract data, focusing on relevant columns, handling missing values and outliers, and preparing the dataset for machine learning models, resulting in a ready-to-use CSV file for predictive analysis.
+
+The output is a cleaned and preprocessed dataset, saved as `machine_df.csv`, which is used in the subsequent predictive modeling phase.
 
 ### Machine Learning
+The second part of the project explores two modeling approaches to forecast the potential total value of EPA awards: regression and classification.
+- Regression: Focuses on predicting the continuous value of the target variable. We utilize:
+  - Linear Regression ([insert file name for linear regression model]): A simple and fast algorithm for baseline modeling.
+  - XGBoost ([insert file name for XGBoost model]): An advanced algorithm for improved accuracy and performance.
+- Classification: Aims to categorize the target variable into specific classes. We explore various algorithms ([insert file names for classification models]) to identify the most effective approach for our objective.
+
+Each model's performance is evaluated to determine the best approach for forecasting the value of EPA awards, considering the specific needs of small, women-owned, and minority-owned businesses.
 
 ## Contributing
 Based on Alphabetical Order
