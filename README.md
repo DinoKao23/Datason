@@ -34,12 +34,12 @@ The output is a cleaned and preprocessed dataset, saved as `machine_df.csv`, whi
 The second part of the project explores two modeling approaches to forecast the potential total value of EPA awards: regression and classification.
 
 - Regression
-  We aim to predict the continuous value of the target variable using two distinct algorithms:
+We aim to predict the continuous value of the target variable using two distinct algorithms:
     - Linear Regression: This simple and fast algorithm serves as our baseline model, providing initial insights into the data's linear relationships. Detailed in `LinearRegressionModel.py`.
     - XGBoost: For enhanced precision and performance, we employ the XGBoost algorithm, known for its advanced capabilities in handling complex data structures. Detailed in `xgboost_regression.py`.
 
 - Classification
-  We apply logistic regression to classify the potential value of EPA awards into specific categories. Detailed in `LogisticRegressionModel.py`.
+We apply logistic regression to classify the potential value of EPA awards into specific categories. Detailed in `LogisticRegressionModel.py`.
 
 Each model's performance is evaluated to determine the best approach for forecasting the value of EPA awards, considering the specific needs of small, women-owned, and minority-owned businesses.
 
