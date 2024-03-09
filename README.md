@@ -32,13 +32,12 @@ The output is a cleaned and preprocessed dataset, saved as `machine_df.csv`, whi
 
 ### Part 2: Machine Learning
 The second part of the project explores two modeling approaches to forecast the potential total value of EPA awards: regression and classification.
+
 - Regression
   We aim to predict the continuous value of the target variable using two distinct algorithms:
     - Linear Regression: This simple and fast algorithm serves as our baseline model, providing initial insights into the data's linear relationships. Detailed in `LinearRegressionModel.py`.
     - XGBoost: For enhanced precision and performance, we employ the XGBoost algorithm, known for its advanced capabilities in handling complex data structures. Detailed in `xgboost_regression.py`.
 
-    - Linear Regression (`LinearRegressionModel.py`): A simple and fast algorithm for baseline modeling.
-    - XGBoost (`xgboost_regression.py`): An advanced algorithm for improved accuracy and performance.
 - Classification
   We apply logistic regression to classify the potential value of EPA awards into specific categories. Detailed in `LogisticRegressionModel.py`.
 
