@@ -8,7 +8,7 @@ This project aims to use predictive analytics to forecast the potential total va
 - [Contributing](#contributing)
 - [License](#license)
 
-## Package Requirement
+## Installation
 This project requires the following packages:
 
 - pandas version 1.5.3 or higher
