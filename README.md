@@ -23,14 +23,14 @@ pip install pandas>=1.5.3 numpy>=1.24.4 scikit-learn>=1.3.1
 
 ## Usage
 There be seperate into two part: Data Cleaning and Machine Learning
-### Data Cleaning and Preprocessing
+### Part 1: Data Cleaning and Preprocessing
 `clean_data.py`
 
 We cleaned and preprocessed EPA contract data, focusing on relevant columns, handling missing values and outliers, and preparing the dataset for machine learning models, resulting in a ready-to-use CSV file for predictive analysis.
 
 The output is a cleaned and preprocessed dataset, saved as `machine_df.csv`, which is used in the subsequent predictive modeling phase.
 
-### Machine Learning
+### Part 2: Machine Learning
 The second part of the project explores two modeling approaches to forecast the potential total value of EPA awards: regression and classification.
 - Regression: Focuses on predicting the continuous value of the target variable. We utilize:
   - Linear Regression (`LinearRegressionModel.py`): A simple and fast algorithm for baseline modeling.
